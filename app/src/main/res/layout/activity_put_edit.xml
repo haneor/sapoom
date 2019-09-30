@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <Button
+            android:id="@+id/cancelBtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:background="@color/Activity_back_color"
+            android:text="취소"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="60"
+            android:gravity="center_vertical|center"
+            android:text="새 게시물"
+            android:textSize="30dp"
+            android:background="@color/Activity_back_color" />
+
+        <Button
+            android:id="@+id/puteditActivity_button_crop"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:background="@color/Activity_back_color" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageBtn"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="60"
+        android:background="@color/Activity_back_color"
+        android:onClick="loadImagefromGallery"
+        android:scaleType="center"
+        android:src="@drawable/update" />
+
+    <EditText
+        android:id="@+id/substanceText"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:ems="10"
+        android:hint="내용 입력"
+        android:inputType="textPersonName"
+        android:background="@color/Activity_back_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/saveBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/Activity_back_color"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:text="저장"
+            android:textSize="20dp"
+            app:srcCompat="@drawable/chat" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical"
+    android:weightSum="100">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/logoutBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/Activity_back_color"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/logout"
+            />
+
+        <ImageView
+            android:id="@+id/appName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/Activity_back_color"
+            app:srcCompat="@drawable/sapoom" />
+
+        <ImageButton
+            android:id="@+id/optionBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/Activity_back_color"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/refresh"
+            />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/newestList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15"
+        android:background="@color/Activity_back_color" />
+
+    <ListView
+        android:id="@+id/upDateList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="65"
+        android:background="@color/Activity_back_color"
+        android:scrollbars="none" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/homeBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/Activity_back_color"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/home" />
+
+        <ImageButton
+            android:id="@+id/searchBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/Activity_back_color"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/search" />
+
+        <ImageButton
+            android:id="@+id/upLoadBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/Activity_back_color"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/save" />
+
+        <ImageButton
+            android:id="@+id/bookmarkBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/Activity_back_color"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/bookmark" />
+
+        <ImageButton
+            android:id="@+id/mineBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/Activity_back_color"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/mine" />
+    </LinearLayout>
+</LinearLayout>

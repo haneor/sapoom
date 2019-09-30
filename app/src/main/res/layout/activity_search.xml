@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:weightSum="100">
+
+    <!--    <android.support.v7.widget.SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:clickable="true"/>-->
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:background="@color/Activity_back_color"
+        android:drawableLeft="@android:drawable/ic_menu_search"
+        android:ems="10"
+        android:hint="임시 검색 기능"
+        android:inputType="textPersonName">
+
+    </SearchView>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/newestList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15"
+        android:background="@color/Activity_back_color" >
+
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="65"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <ListView
+            android:id="@+id/newestImageList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            android:scrollbars="none"
+            android:background="@color/Activity_back_color" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/homeBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/Activity_back_color"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/home" />
+
+        <ImageButton
+            android:id="@+id/searchBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/Activity_back_color"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/search" />
+
+        <ImageButton
+            android:id="@+id/upLoadBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/Activity_back_color"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/save" />
+
+        <ImageButton
+            android:id="@+id/bookmarkBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/Activity_back_color"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/bookmark" />
+
+        <ImageButton
+            android:id="@+id/mineBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/Activity_back_color"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/mine" />
+    </LinearLayout>
+
+</LinearLayout>
